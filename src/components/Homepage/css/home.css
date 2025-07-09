@@ -1,0 +1,10 @@
+
+@media (min-width: 900px) {
+    .home-wrap{
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        padding-top: 80px;
+    }
+}

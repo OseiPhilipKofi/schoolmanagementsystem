@@ -1,0 +1,45 @@
+@import url("../../../css/root.css");
+
+.error-page-wrap{
+    min-height: calc(100vh - 70px);
+}
+.error-page-wrap .img-wrapper {
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+}
+.img-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.urltext {
+  padding: 10px 20px;
+  color: var(--text-main);
+  background: var(--btnmain);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+@media (max-width: 600px) {
+  .urltext {
+    font-size: 14px;
+  }
+  .text-first {
+    font-size: 10px;
+  }
+  .text-second {
+    font-size: 14px;
+  }
+
+}
+.head-text {
+  color: var(--text-main);
+}

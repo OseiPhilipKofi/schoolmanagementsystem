@@ -1,0 +1,39 @@
+@import url('../../../css/root.css');
+
+.profile-wrap{
+    display: block;
+    width: 100%;
+}
+.profile-wrap .profile-form{
+    display: block;
+    width: 100%;
+    max-width: 400px !important;
+    position: relative;
+    margin: auto;
+}
+.profile-form .head{
+    color: var(--text-main);
+}
+.profile-form .form-group,
+.form-group .form-control{
+    max-width: 100%;
+}
+.profile-form .head{
+    font-weight: 900;
+}
+.profile-form .profile-change{
+    color: var(--white);
+
+}
+
+.profile-form .profile-img-wrap{
+    object-fit: cover;
+    max-width: 100%;
+}
+.profile-form .profile-img-wrap img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}

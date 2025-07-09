@@ -1,0 +1,151 @@
+:root{
+    --white: #ffffff;
+    --opaquewhite: #ffffff9f;
+    --success:rgb(5, 90, 47);
+    --successlight:rgb(101, 175, 138);
+    --danger:rgb(179, 0, 60);
+    --black: #000;
+    --textshadow: rgba(0, 0, 0, 0.24);
+    --shadow: rgba(0, 0, 0, 0.24);
+    --keyText: #0c1143;
+    --gold: #FFD700;
+    --text-color: #1a2338;
+    --inputbackground: #6868682c;
+    --inputtext: #000000;
+    --inputtextlight: #242424;
+    --sidebar-text: #f0f0f0;
+    --text-key: linear-gradient(45deg, #2751e9, #3f92ce, #f8186a);
+    --text-main: #060843;
+    --border-main: #14165445;
+    --text-other: #1e2032;
+    --text-opposite: #bdbfd4;
+    --btnmain: linear-gradient(100deg, #8d64f6, #424ed5);
+    --navbtn: linear-gradient(100deg, #2b1d90, #060690);
+    --btnsubmain: linear-gradient(100deg, #1b1d57, #252593);
+    --gradientBackground: linear-gradient(43deg, #dce3f2, #e2f4ed);
+    --cardBackground: linear-gradient(120deg, #707ad4, #a08cf6);
+    --authBackground: linear-gradient(120deg, #fbff00, #ffab02);
+    --btntab: linear-gradient(45deg, #ffffff2e, #08080a2f, #ded4ff3a);
+    --btntabhover: linear-gradient(180deg, #ffffff, #d1d5fa);
+    --tab-main: linear-gradient(45deg, #bbca10, #313eae, #925e22);
+    --tab-other: linear-gradient(45deg, #ff7700, #00ffd5, #ff3c00);
+}
+
+[data-theme="dark"] {
+    --success: #5d9388;
+    --danger: #8b5656;
+    --white: #ffffff;
+    --light: #cbc9c97e;
+    --textshadow: #bac1f9;
+    --shadow: rgba(255, 255, 255, 0.24);
+    --btnhover: #34495e;
+    --footerBackground: #2c3e50;
+    --footerText: #ecf0f1;
+    --footerHead: #1abc9c;
+    --keyText: #8cb3bd;
+    --header: #adadec;
+    --gold: #f1c40f;
+    --inputbackground: #34495e;
+    --inputtext: #ecf0f1;
+    --inputtextlight: #bab4b4;
+    --sidebar-text: #4223a8;
+    --text-main: #ffffff;
+    --border-main: #ffffff45;
+    --text-other: #9b9db4;
+    --text-opposite: #24252f;
+    --background-color: #1a2338;
+    --btnmain: linear-gradient(100deg, #8d64f6, #424ed5);
+    --navbtn: linear-gradient(100deg, #8d64f6, #424ed5);
+    --btnsubmain: linear-gradient(100deg, #aeaeec, #8963dc);
+    --gradientbtn: linear-gradient(45deg, #ffffff, #8b8bf1);
+    --gradientBackground: linear-gradient(45deg, #33303e, #43555f, #262135, #23253e);
+    --cardBackground: linear-gradient(120deg, #707ad4, #a08cf6);
+    --authBackground: linear-gradient(120deg, #9a9d00, #a36d00);
+    --btntab: linear-gradient(45deg, #ffffff2e, #d1d5fa2f, #ded4ff3a);
+    --btntabhover: linear-gradient(180deg, #ffffff, #d1d5fa);
+    --tab-main: linear-gradient(45deg, #fff200, #3a84fb, #ff8c08);
+    --tab-other: linear-gradient(45deg, #a16939, #2a8c7b, #972603);
+}
+*{
+    font-family: Poppins, sans-serif;
+}
+@keyframes backgroundAnimation {
+    0% {
+        background-position: left bottom;
+    }
+    100% {
+        background-position: right top;
+    }
+}
+
+input[type="date"],
+input[type="time"],
+textarea,
+input[type="file"],
+select,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="phone"],
+
+input[type="date"]:disabled,
+input[type="time"]:disabled,
+input[type="file"]:disabled,
+input[type="text"]:disabled,
+input[type="password"]:disabled,
+input[type="email"]:disabled,
+input[type="number"]:disabled,
+input[type="phone"]:disabled,
+
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="file"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="phone"]:focus,
+
+input[type="date"]:active,
+input[type="time"]:active,
+textarea,
+input[type="file"]:active,
+select,
+input[type="text"]:active,
+input[type="password"]:active,
+input[type="email"]:active,
+input[type="phone"]:active,
+input[type="number"]:active{
+    background-color: var(--inputbackground);
+    color: var(--inputtext);
+    min-height: 50px !important;
+    border-radius: 15px !important;
+    -webkit-border-radius: 15px !important;
+    -moz-border-radius: 15px !important;
+    -ms-border-radius: 15px !important;
+    -o-border-radius: 15px !important;
+}
+
+input[type="date"]:disabled,
+input[type="time"]:disabled,
+input[type="file"]:disabled,
+input[type="text"]:disabled,
+input[type="password"]:disabled,
+input[type="email"]:disabled,
+input[type="number"]:disabled,
+input[type="phone"]:disabled{
+    color: var(--inputtextlight);
+}
+
+
+input[type="submit"],
+input[type="reset"]{
+    min-height: 40px !important;
+    border-radius: 15px !important;
+    -webkit-border-radius: 15px !important;
+    -moz-border-radius: 15px !important;
+    -ms-border-radius: 15px !important;
+    -o-border-radius: 15px !important;
+    transition: all 0.3s;
+}

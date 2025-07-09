@@ -1,0 +1,343 @@
+@import url('../../../css/root.css');
+
+.formWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.formWrapper .loginWrapper,
+.formWrapper .signinWrapper {
+    display: block;
+    width: 100%;
+    height: fit-content;
+    max-width: 400px;
+}
+.formBodyWrap .signinWrapper {
+    display: none;
+}
+.formWrapper form{
+    display: block !important;
+    width: 100%;
+    max-width: 600px;
+    height: fit-content;
+    margin: auto !important;
+    padding: 20px 10px;
+    min-width: 300px !important;
+}
+.messages{
+    display: block;
+    width: 100%;
+    margin: auto ;
+    margin-top: 10px;
+    text-transform: capitalize;
+    text-align: center !important;
+    margin-bottom: 10px !important;
+    margin: 20px auto;
+}
+.messages div:not(:empty){
+    padding: 10px;
+    margin: 20px auto;
+}
+.messages .errMessage{
+    display: block !important;
+    color: var(--danger) !important;
+    text-align: center !important;
+    margin: auto;
+}
+.messages .sucMessage{
+    display: block !important;
+    color: var(--success) !important;
+    text-align: center !important;
+    margin: auto;
+}
+#loginForm .forgotWrap{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 10px !important;
+    margin-top: 30px !important;
+}
+
+#loginForm .forgotWrap,
+.forgotWrap p{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    text-decoration: none;
+}
+.forgotWrap p a{
+    display: block;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    text-decoration: none;
+}
+#signinForm .formBodyWrap{
+    display: block !important;
+    width: 100%;
+    height: fit-content;
+    max-height: 400px;
+    margin-bottom: 20px;
+    scroll-behavior: smooth;
+}
+form .headLabel{
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    margin: auto !important;
+    text-transform: capitalize;
+    user-select: none;
+    font-weight: 900;
+    color: var(--text-main);
+}
+.formWrapper form .eachInput{
+    display: block !important;
+    width: 100%;
+    height: fit-content;
+}
+.formWrapper form .eachInput label{
+    display: block;
+    width: 100%;
+    text-transform: capitalize;
+    user-select: none;
+    cursor: pointer !important;
+    margin: 0;
+    padding: 0;
+}
+.formWrapper form .eachInput select{
+    outline: none !important;
+    border: none !important;
+}
+.formWrapper form .eachInput select,
+.formWrapper form .eachInput input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 0 10px 0 10px;
+    border: none ;
+    outline: none !important;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--shadow);
+}
+.formWrapper form .eachInput #userPassword{
+    margin: 0 !important;
+}
+.formWrapper form .eachInput input[type="password"]{
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 0 10px 0 10px;
+    outline: none;
+}
+.formWrapper form .eachInput select::placeholder,
+.formWrapper form .eachInput input::placeholder{
+    display: block;
+    text-transform: capitalize;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+.formWrapper form .eachInput input[type="text"]:focus,
+.formWrapper form .eachInput input[type="password"]:focus,
+.formWrapper form .eachInput input[type="email"]:focus,
+.formWrapper form .eachInput input[type="number"]:focus{
+    font-size: 15px;
+    transition:all 0.2s linear;
+    -webkit-transition:all 0.2s linear;
+    -moz-transition:all 0.2s linear;
+    -ms-transition:all 0.2s linear;
+    -o-transition:all 0.2s linear;
+    border-bottom: 1px solid var(--blue);
+}
+.formWrapper form .eachInput input[type="checkbox"]{
+    display: block;
+    width: fit-content;
+    max-width: fit-content;
+    height: fit-content;
+    max-height: fit-content;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+.formWrapper form .eachInput select,
+.formWrapper form .eachInput select option {
+    display: block;
+    text-transform: capitalize !important;
+}
+.eachInput select:focus ~ .eachInput label,
+.eachInput input:focus ~ .eachInput label{
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+.formWrapper form .btns a{
+    min-width: 40%;
+}
+.formWrapper form .btns a input[type='submit']{
+    min-width: 100% !important;
+}
+.eachInput input[type="submit"]{
+    display: block;
+    width: fit-content;
+    height: 40px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+.eachInput .showPass{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    max-width: fit-content;
+    word-break: keep-all;
+    height: fit-content;
+    margin-top: 10px;
+    position: relative;
+    gap: 10px !important;
+    font-size: 12px;
+}
+#loginForm .eachInput .showPass{
+    margin-bottom: 20px;
+}
+.showPass label{
+    display: block;
+    max-width: fit-content;
+}
+.showPass input{
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.btns input{
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 5px 20px;
+    min-width: 40%;
+    max-width: 100px;
+}
+
+.btns .loginUser{
+    background: var(--btnmain);
+    text-transform: capitalize;
+    color: var(--white);
+    text-transform:capitalize;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+.btns .signinUser{
+    background: var(--btnsubmain);
+    text-transform: capitalize;
+    color: var(--white);
+    text-transform:capitalize;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+.btns .registerUser{
+    background-color: var(--black);
+    text-transform: capitalize;
+    color: var(--white);
+    text-transform:capitalize;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.btns .loginUser2{
+    background-color: var(--footerBackground);
+    text-transform: capitalize;
+    color: var(--white);
+    text-transform:capitalize;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.eachInput #cPassword{
+    margin-bottom: 0 !important;
+}
+
+.eachInput .passStrength{
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between !important;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+.passStrength p{
+    display: block ;
+    max-width: fit-content;
+    color: red;
+}
+.glog{
+    margin-top: 30px;
+}
+.google-login  p{
+    color: var(--text-main);
+}
+.google-login .google-btn img{}
+.google-login .google-btn img{
+    max-width: 25px;
+}
+.google-login .google-btn span{
+    font-size: 12px;
+}
+
+.authbtnmain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    min-width: 150px;
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background: var(--authBackground);
+    color: var(--text-main);
+    text-decoration: none !important;
+    text-align: center;
+}
