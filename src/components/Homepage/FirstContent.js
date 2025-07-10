@@ -6,7 +6,7 @@ const FirstContent = () => {
     return (
         <>
         <div className="main-content-wrap">
-            <div className="first-content bg-white">
+            <div className="first-content">
                 <div className="carousel-wrap">
                     <div className="text-box d-flex flex-column justify-content-center align-items-center">
                         <h2 className="header">

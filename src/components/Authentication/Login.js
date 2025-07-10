@@ -45,7 +45,7 @@ const Login = () => {
                             <p className="text-center">or</p>
                             <div onClick={ loginAuthentication } className="google-btn pointer authbtnmain m-auto d-flex flex-row justify-content-center align-items-center gap-10">
                                 <img className="google-icon" src={ googleImg } />
-                                <span className="text-capitalize">Login with Google</span>
+                                <span className="btn text-capitalize">Login with Google</span>
                             </div>
                         </div>
 

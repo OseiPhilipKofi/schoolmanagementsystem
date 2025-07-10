@@ -109,6 +109,10 @@ code {
   font-size: 25px;
   color: var(--text-main);
 }
+.other-tabs svg,
+.optionstab svg{
+  font-size: 20px;
+}
 .header-wrap .user-tabs{
   top: 100%;
   background: var(--gradientBackground);
@@ -247,8 +251,9 @@ code {
   animation: backgroundAnimation  5s ease-in-out infinite alternate;
   -webkit-animation: backgroundAnimation  5s ease-in-out infinite alternate;
 }
-.phone-tabs .pages .active .icon{
-  font-size: 20px;
+.phone-tabs .pages .active .icon,
+.phone-tabs .pages .active .icon svg{
+  font-size: 20px !important;
   padding: 0;
   margin: 0;
 }
@@ -262,14 +267,14 @@ code {
   margin: 0;
 }
 
-@media (max-width: 600px) {
-    .header-wrap .other-tabs .mini-tab .userprofile-wrap{
-      width: 40px;
-      height: 40px;
-      max-width: 40px;
-      max-height: 40px;
-    }
+.header-wrap .other-tabs .mini-tab .userprofile-wrap{
+  width: 40px;
+  height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+}
 
+@media (max-width: 600px) {
   .phone-tabs .pages a{
     text-decoration: none;
     display: flex;
@@ -280,11 +285,4 @@ code {
   }
 }
 
-@media (min-width: 600px) {
-    .header-wrap .other-tabs .mini-tab .userprofile-wrap{
-      width: 60px;
-      height: 60px;
-      max-width: 60px;
-      max-height: 60px;
-    }
-}
+/* @media (min-width: 600px) {} */

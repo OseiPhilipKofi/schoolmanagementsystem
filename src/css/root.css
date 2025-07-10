@@ -16,13 +16,16 @@
     --sidebar-text: #f0f0f0;
     --text-key: linear-gradient(45deg, #2751e9, #3f92ce, #f8186a);
     --text-main: #060843;
-    --border-main: #14165445;
+    --border-main: #14165417;
     --text-other: #1e2032;
     --text-opposite: #bdbfd4;
+    --bk-yellow: linear-gradient(100deg, #efd36f, #f6ba5a);
+    --bk-green: linear-gradient(100deg, #81e1ae, #7dd7b0);
+    --bk-blue: linear-gradient(100deg, #81bae1, #5c87d2);
     --btnmain: linear-gradient(100deg, #8d64f6, #424ed5);
     --navbtn: linear-gradient(100deg, #2b1d90, #060690);
     --btnsubmain: linear-gradient(100deg, #1b1d57, #252593);
-    --gradientBackground: linear-gradient(43deg, #dce3f2, #e2f4ed);
+    --gradientBackground: linear-gradient(43deg, #cee5ec, #cee6dd);
     --cardBackground: linear-gradient(120deg, #707ad4, #a08cf6);
     --authBackground: linear-gradient(120deg, #fbff00, #ffab02);
     --btntab: linear-gradient(45deg, #ffffff2e, #08080a2f, #ded4ff3a);
@@ -54,6 +57,9 @@
     --text-other: #9b9db4;
     --text-opposite: #24252f;
     --background-color: #1a2338;
+    --bk-yellow: linear-gradient(100deg, #786b3a, #694e24);
+    --bk-green: linear-gradient(100deg, #3a6950, #2f634d);
+    --bk-blue: linear-gradient(100deg, #426278, #2e456e);
     --btnmain: linear-gradient(100deg, #8d64f6, #424ed5);
     --navbtn: linear-gradient(100deg, #8d64f6, #424ed5);
     --btnsubmain: linear-gradient(100deg, #aeaeec, #8963dc);
@@ -76,6 +82,29 @@
     100% {
         background-position: right top;
     }
+}
+
+@media (max-width: 600px) {
+    *{
+        font-size: 13px;
+    }
+}
+@media (min-width: 600px) {
+    *{
+        font-size: 16px;
+    }
+}
+.btn{
+    user-select: none;
+}
+.bk-yellow{
+    background: var(--bk-yellow);
+}
+.bk-green{
+    background: var(--bk-green);
+}
+.bk-blue{
+    background: var(--bk-blue);
 }
 
 input[type="date"],

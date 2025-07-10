@@ -1,10 +1,11 @@
 import { faThumbsUp } from '@fortawesome/free-regular-svg-icons';
 import './css/footer.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChalkboardTeacher, faChartLine, faCloudShowersHeavy, faGears, faUserAstronaut, faUsers, faUserTie } from '@fortawesome/free-solid-svg-icons';
+import { faChalkboardTeacher, faChartLine, faCloudShowersHeavy, faGears, faUserAstronaut, faUsers, faUserShield, faUserTie } from '@fortawesome/free-solid-svg-icons';
 import { faUserMd } from '@fortawesome/free-solid-svg-icons/faUserMd';
 import { faUserGraduate } from '@fortawesome/free-solid-svg-icons/faUserGraduate';
 import { Link } from 'react-router-dom';
+import { faFacebook, faTelegram, faTiktok, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
     return (
@@ -58,22 +59,21 @@ const Footer = () => {
                 <div className="development-wrap"></div>
 
 
-
-
-
                 <footer className="footer py-5 mt-5">
                     <span className="icon mb-5 w-100 d-flex justify-content-center align-items-center">
                         <FontAwesomeIcon icon={ faUserAstronaut } />
                     </span>
+                    <div className="footer-lead bk-blue">
+                        <h5 className='footer-header'> Want To Know More ? </h5>
+                        <p>
+                            Our School Management System is a robust and user-friendly platform designed to streamline the daily operations of our educational institution. It serves as a centralized hub for administrators, teachers, students, and parents to interact, manage, and access important academic and administrative information efficiently.
+                        </p>
+                    </div>
 
-                    <h4 className='footer-header'> Want To Know More ? </h4>
-                    <p>
-                        Our School Management System is a robust and user-friendly platform designed to streamline the daily operations of our educational institution. It serves as a centralized hub for administrators, teachers, students, and parents to interact, manage, and access important academic and administrative information efficiently.
-                    </p>
 
                     <div className="footer-container">
 
-                        <div  className="footer-section d-flex flex-column justify-content-between align-items-center">
+                        <div  className="footer-section c-border d-flex flex-column justify-content-between align-items-center">
                             <div className='wrap-top'>
                                 <h2>What Parents Should Expect </h2>
                                 <li>Secure access to their child's academic records, attendance, and progress reports.</li>
@@ -85,37 +85,37 @@ const Footer = () => {
                             <div className="btn pagebtnmain">Read More</div>
                         </div>
 
-                        <div className="footer-section d-flex flex-column justify-content-between align-items-center">
+                        <div className="footer-section c-border d-flex flex-column justify-content-between align-items-center">
                             <div className='wrap-top'>
                                 <h2>What Students Should Expect</h2>
-                                <p>Access to their personal academic records, attendance, and grades.</p>
-                                <p>Ability to view className schedules, assignments, and exam timetables.</p>
-                                <p>Timely updates on school events and announcements.</p>
-                                <p>A streamlined process for retrieving their academic reports successfully.</p>
+                                <li>Access to their personal academic records, attendance, and grades.</li>
+                                <li>Ability to view className schedules, assignments, and exam timetables.</li>
+                                <li>Timely updates on school events and announcements.</li>
+                                <li>A streamlined process for retrieving their academic reports successfully.</li>
                             </div>
 
                             <div className="btn pagebtnmain">Read More</div>
                         </div>
 
-                        <div className="footer-section d-flex flex-column justify-content-between align-items-center">
+                        <div className="footer-section c-border d-flex flex-column justify-content-between align-items-center">
                             <div className='wrap-top'>
                                 <h2>What Teachers Should Expect</h2>
-                                <p>A comprehensive interface to fill and submit student reports and grades efficiently.</p>
-                                <p>Tools to track attendance and monitor student performance.</p>
-                                <p>Communication channels to interact with students and parents.</p>
-                                <p>Access to scheduling tools for classes, exams, and events.</p>
+                                <li>A comprehensive interface to fill and submit student reports and grades efficiently.</li>
+                                <li>Tools to track attendance and monitor student performance.</li>
+                                <li>Communication channels to interact with students and parents.</li>
+                                <li>Access to scheduling tools for classes, exams, and events.</li>
                             </div>
 
                             <div className="btn pagebtnmain">Read More</div>
                         </div>
 
-                        <div className="footer-section d-flex flex-column justify-content-between align-items-center">
+                        <div className="footer-section c-border d-flex flex-column justify-content-between align-items-center">
                             <div className='wrap-top'>
                                 <h2>What Administration Is Up To and Bringing</h2>
-                                <p>Centralized management of student enrollment, records, and academic data.</p>
-                                <p>Generation of detailed reports and analytics to support decision-making.</p>
-                                <p>Implementation of secure access controls to protect sensitive information.</p>
-                                <p>Continuous improvements to enhance user experience and system capabilities.</p>
+                                <li>Centralized management of student enrollment, records, and academic data.</li>
+                                <li>Generation of detailed reports and analytics to support decision-making.</li>
+                                <li>Implementation of secure access controls to protect sensitive information.</li>
+                                <li>Continuous improvements to enhance user experience and system capabilities.</li>
                             </div>
 
                             <div className="btn pagebtnmain">Read More</div>
@@ -126,131 +126,186 @@ const Footer = () => {
                 </footer>
 
 
-                <footer className="footer">
+                <footer className="footer py-5 mt-5">
 
                     <span className="icon mb-5 w-100 d-flex justify-content-center align-items-center">
                         <FontAwesomeIcon icon={ faUserTie } />
                     </span>
+                    <div className="footer-lead bk-green">
+                        <h5 className='footer-header'>Why the Perfect Choice ? </h5>
+                        <p>
+                            Our School Management System is a robust and user-friendly platform designed to streamline the daily operations of educational institutions. It serves as a centralized hub for administrators, teachers, students, and parents to interact, manage, and access important academic and administrative information efficiently.
+                        </p>
+                    </div>
 
-
-                    <h4 className='footer-header'>Why the Perfect Choice ? </h4>
-                    <p>
-                        Our School Management System is a robust and user-friendly platform designed to streamline the daily operations of educational institutions. It serves as a centralized hub for administrators, teachers, students, and parents to interact, manage, and access important academic and administrative information efficiently.
-                    </p>
 
                     <div className="footer-container">
-                        <div className="footer-section d-flex flex-column justify-content-between align-items-center">
+                        <div className="footer-section c-border d-flex flex-column justify-content-between align-items-center">
                             <div className='wrap-top'>
-                            <h2>Why choose us</h2>
-                            <p>Comprehensive academic management</p>
-                            <p>User-friendly interface for all roles</p>
-                            <p>Secure and reliable data handling</p>
-                            <p>Efficient communication tools</p>
-                            <p>Continuous support and updates</p>
+                                <h2>Why choose us</h2>
+                                <li>Comprehensive academic management</li>
+                                <li>User-friendly interface for all roles</li>
+                                <li>Secure and reliable data handling</li>
+                                <li>Efficient communication tools</li>
+                                <li>Continuous support and updates</li>
+                            </div>
+
+                            <span className="sharp">
+                                <span className="icon w-100 d-flex justify-content-center align-items-center">
+                                    <FontAwesomeIcon icon={ faThumbsUp } />
+                                </span>
+                                <div className="btn pagebtnmain">Read More</div>
+                            </span>
+
                         </div>
 
-                        <span className="sharp">
+                        <div className="footer-section c-border d-flex flex-column justify-content-between align-items-center">
+                            <div className='wrap-top'>
+                                <h2>Our Ambitions</h2>
+                                <li>Empower students and educators</li>
+                                <li>Enhance learning experiences</li>
+                                <li>Streamline school administration</li>
+                                <li>Foster community engagement</li>
+                            </div>
+                            <span className="sharp">
+                                <span className="icon w-100 d-flex justify-content-center align-items-center">
+                                    <FontAwesomeIcon icon={ faChartLine } />
+                                </span>
+                                <div className="btn pagebtnmain">Read More</div>
+                            </span>
+
+                        </div>
+
+
+                        <div className="footer-section c-border d-flex flex-column justify-content-between align-items-center">
+                            <div className='wrap-top'>
+                                <h2>Page functionalities</h2>
+                                <li>Real-time notifications</li>
+                                <li>Parent and teacher portals</li>
+                                <li>className scheduling and attendance</li>
+                                <li>Report generation and analytics</li>
+                                <li>Secure access to student records</li>
+                            </div>
+                            <span className="sharp">
                             <span className="icon w-100 d-flex justify-content-center align-items-center">
-                                <FontAwesomeIcon icon={ faThumbsUp } />
+                                    <FontAwesomeIcon icon={ faGears } />
+                                </span>
+
+                                <div className="btn pagebtnmain">Read More</div>
                             </span>
-                            <div className="btn pagebtnmain">Read More</div>
-                        </span>
 
-                    </div>
-
-                    <div className="footer-section d-flex flex-column justify-content-between align-items-center">
-                        <div className='wrap-top'>
-                            <h2>Our Ambitions</h2>
-                            <p>Empower students and educators</p>
-                            <p>Enhance learning experiences</p>
-                            <p>Streamline school administration</p>
-                            <p>Foster community engagement</p>
                         </div>
-                        <span className="sharp">
-                            <span className="icon w-100 d-flex justify-content-center align-items-center">
-                                <FontAwesomeIcon icon={ faChartLine } />
-                            </span>
-                            <div className="btn pagebtnmain">Read More</div>
-                        </span>
 
-                    </div>
-
-
-                    <div className="footer-section d-flex flex-column justify-content-between align-items-center">
-                        <div className='wrap-top'>
-                            <h2>Page functionalities</h2>
-                            <p>Real-time notifications</p>
-                            <p>Parent and teacher portals</p>
-                            <p>className scheduling and attendance</p>
-                            <p>Report generation and analytics</p>
-                            <p>Secure access to student records</p>
-                        </div>
-                        <span className="sharp">
-                        <span className="icon w-100 d-flex justify-content-center align-items-center">
-                                <FontAwesomeIcon icon={ faGears } />
-                            </span>
-
-                            <div className="btn pagebtnmain">Read More</div>
-                        </span>
-
-                    </div>
-
-
-
-
-                        <div className="footer-section d-flex flex-column justify-content-between align-items-center">
+                        <div className="footer-section c-border d-flex flex-column justify-content-between align-items-center">
                             <div className='wrap-top'>
                                 <h2>About Us</h2>
-                                <p>Our School Management System is dedicated to providing a seamless and efficient platform for managing all aspects of school administration and academics.</p>
-                                <p>We strive to empower educators, students, and parents through innovative technology and user-friendly design.</p>
-                                <p>Learn more about our commitment to enhancing the educational experience.</p>
+                                <li>Our School Management System is dedicated to providing a seamless and efficient platform for managing all aspects of school administration and academics.</li>
+                                <li>We strive to empower educators, students, and parents through innovative technology and user-friendly design.</li>
+                                <li>Learn more about our commitment to enhancing the educational experience.</li>
                             </div>
 
                             <div className="btn pagebtnmain">Read More</div>
                         </div>
-                        <div className="footer-section">
+
+                    </div>
+                </footer>
+
+
+
+
+                <footer className="footer">
+
+                    <span className="icon mb-5 w-100 d-flex justify-content-center align-items-center">
+                        <FontAwesomeIcon icon={ faUserShield } />
+                    </span>
+                    <div className="footer-lead bk-yellow">
+                        <h5 className='footer-header'>How to connect with us </h5>
+                        <p>
+                            Our School Management System is a robust and user-friendly platform designed to streamline the daily operations of educational institutions. It serves as a centralized hub for administrators, teachers, students, and parents to interact, manage, and access important academic and administrative information efficiently.
+                        </p>
+                    </div>
+
+                    <div className="footer-container">
+
+                        <div className="footer-section c-border">
                             <h2>Contact Us</h2>
-                            <p><strong>Address:</strong> 123 Education Lane, Knowledge City</p>
-                            <p><strong>Phone:</strong> (555) 123-4567</p>
-                            <p className='ww '><strong>Email:</strong> support@schoolmanagementsystem.com</p>
-                            <p><strong>Hours:</strong><br/> Mon-Fri: 8 AM - 6 PM,<br/> Sat: 9 AM - 1 PM</p>
+                            <li><strong>Address:</strong> 123 Education Lane, Knowledge City</li>
+                            <li><strong>Phone:</strong> (555) 123-4567</li>
+                            <li className='ww '><strong>Email:</strong> support@schoolmanagementsystem.com</li>
+                            <li><strong>Hours:</strong> Mon-Fri: 7 AM - 6 PM</li>
                         </div>
-                        <div className="footer-section">
-                            <h2>Student Resources</h2>
-                            <ul>
-                                <p>Student Portal</p>
-                                <p>Academic Calendar</p>
-                                <p>Fee Payment</p>
-                                <p>Forms & Documents</p>
-                                <p>Feedback & Support</p>
-                            </ul>
-                        </div>
-                        <div className="footer-section">
-                            <h2>Academic Information</h2>
-                            <ul>
-                                <p>Courses Offered</p>
-                                <p>Departments</p>
-                                <p>Library Resources</p>
-                                <p>Extracurricular Activities</p>
-                                <p>Upcoming Events</p>
-                            </ul>
-                        </div>
-                        <div className="footer-section">
-                            <h4>Follow Us</h4>
-                            <div className="social-icons">
-                                <i className="fa-brands fa-square-whatsapp"></i>
-                                <i className="fa-brands fa-facebook"></i>
-                                <i className="fa-brands fa-telegram"></i>
-                                <i className="fa-brands fa-tiktok"></i>
+                        <div className="footer-section c-border">
+                            <div className='wrap-top'>
+                                <h2>Student Resources</h2>
+                                <li>Student Portal</li>
+                                <li>Academic Calendar</li>
+                                <li>Fee Payment</li>
+                                <li>Forms & Documents</li>
+                                <li>Feedback & Support</li>
                             </div>
                         </div>
-                        <div className="footer-section">
+                        <div className="footer-section c-border">
+                            <div className='wrap-top'>
+                                <h2>Academic Information</h2>
+                                <li>Courses Offered</li>
+                                <li>Departments</li>
+                                <li>Library Resources</li>
+                                <li>Extracurricular Activities</li>
+                                <li>Upcoming Events</li>
+                            </div>
+                        </div>
+                        <div className="footer-section social-wrap c-border position-relative">
+                            <div className="wrap-top">
+                                <h4>Follow Us</h4>
+                            </div>
+                            <div className="social-icons">
+                            <Link to='/' >
+                                <span className="each-icon">
+                                    <FontAwesomeIcon icon={ faWhatsapp }/>
+                                </span>
+                                <span className="each-text">
+                                    Whatsapp
+                                </span>
+
+                              </Link>
+                            <Link to='/' >
+                                <span className="each-icon">
+                                    <FontAwesomeIcon icon={ faTelegram }/>
+                                </span>
+                                <span className="each-text">
+                                    Telegram
+                                </span>
+
+                              </Link>
+                            <Link to='/' >
+                                <span className="each-icon">
+                                    <FontAwesomeIcon icon={ faFacebook }/>
+                                </span>
+                                <span className="each-text">
+                                    Facebook
+                                </span>
+
+                              </Link>
+                            <Link to='/' >
+                                <span className="each-icon">
+                                    <FontAwesomeIcon icon={ faTiktok }/>
+                                </span>
+                                <span className="each-text">
+                                    Tiktok
+                                </span>
+
+                              </Link>
+                            </div>
+                        </div>
+
+
+                        <div className="footer-section newsletter-wrap">
                             <div className="newsletter w-50 text-center">
                                 <h4>Newsletter Signup</h4>
                                 <p className="mb-4">Stay updated with the latest news and health tips. Subscribe to our newsletter!</p>
 
                                 <form action="" className="px-3 newsletter-form m-auto">
-                                    <input type="email" placeholder="Your Email" id="newsletterEmail" name="email" className="text-white" />
+                                    <input type="email" placeholder="Your Email" id="newsletterEmail" name="email" />
                                     <input type="submit" className="mainbtn" id="suscribe" value="suscribe" />
                                     <div className="messages">
                                         <p className="errMessage" id="errMessage"></p>
