@@ -1,0 +1,2 @@
+It seems you mentioned "CODE:==================" but did not include any code for review.  
+Please paste the code you want to be reviewed, and I'll provide a detailed industry-standard critique with optimized corrections in the requested pseudo-code format.

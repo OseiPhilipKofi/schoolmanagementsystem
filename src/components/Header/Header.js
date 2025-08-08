@@ -7,6 +7,7 @@ import { faBlog, faCaretDown, faCaretUp, faChair, faClose, faHouse, faListDots, 
 import { faBuilding, faUser } from "@fortawesome/free-regular-svg-icons";
 import { useEffect, useState } from "react";
 import { faAppStore } from "@fortawesome/free-brands-svg-icons";
+import ScrollingObserver from "../../observers/ScrollingObserver";
 
 const Header = () => {
     const { isLarger, isSmaller } = Resizeobserver(document.body);
@@ -19,42 +20,28 @@ const Header = () => {
     const navigate = useNavigate();
 
     useEffect(()=>{
+        // const isScrolling = ScrollingObserver;
         const pathname = location.pathname.toLowerCase();
         const pageList = ['/', '/home', '/about', '/contact', '/facilities' ,'/administration' ,'/blog' ,'/classrooms' ,'/profile' ,'/login' ,'/logout' ,'/contact' ,'/appointment' ];
         const isPageInList = pageList.includes(pathname);
         const path = pathname.split('/')[1] || 'home';
-        console.log(isPageInList, path);
         if(isPageInList){
             localStorage.setItem('page', path);
             if(path === 'home' || path === ''){
                 setCurrentPage('home');
-                console.log('current page is ', currentPage);
                 navigate(path);
             }else{
                 setCurrentPage(path);
-                console.log('current page is ', currentPage);
                 navigate(path);
             }
         }
 
-    }, []);
+    },[]);
     document.addEventListener('scroll', ()=>{
-        changebgcolor(document.querySelector('.header-wrap'));
+        ScrollingObserver( document.querySelector('.header-wrap') );
     })
-    function changebgcolor(obj){
-
-        if(window.pageYOffset > 0){
-            obj.setAttribute("style", "box-shadow: 0 0 10px rgba(0,0,0, 0.3);background: var(--gradientBackground);background-size: 180%; background-position: right top;");
-        }else{
-            obj.setAttribute("style", "background-color :transparent");
-        }
-    }
-
     function toggleActive(obj){
-        console.log('times useEffect is running');
-
         let key = obj.currentTarget.getAttribute('data-key');
-
         document.querySelectorAll('.page').forEach(page=>{
             if(page.getAttribute('data-key') === key){
                 page.classList.add('active');
@@ -70,7 +57,9 @@ const Header = () => {
     }
     function toggleTheme(e) {
         var theme;
+        console.log(e.currentTarget);
         let obj = e.currentTarget.lastElementChild;
+        console.log(obj);
         if(obj.innerHTML === 'dark theme'){
             theme = 'dark';
             setIslight(false);
@@ -80,12 +69,13 @@ const Header = () => {
             setIslight(true);
             obj.innerHTML = 'dark theme';
         }
+        console.log(theme);
         document.documentElement.setAttribute("data-theme", theme );
         localStorage.setItem("theme", theme );
     }
 
-    const storedTheme = localStorage.getItem("theme") !=='' ? localStorage.getItem("theme") : 'light';
-    const themevalue = storedTheme === 'light' ? 'dark theme' : 'white theme' ;
+    const storedTheme = localStorage.getItem("theme") !== null ? localStorage.getItem("theme") : 'light';
+    const themevalue = storedTheme === 'light' ? 'dark theme' : 'light theme' ;
 
     useEffect(()=>{
 
@@ -146,7 +136,7 @@ const Header = () => {
         <>
             <>
 
-                    <div className="header-wrap navbar m-0 py-2  w-100 d-fit-content d-flex flex-row justify-content-between align-items-center">
+                    <div className="header-wrap navbar m-0 py-2 px-md-5 px-2 w-100 d-fit-content d-flex flex-row justify-content-between align-items-center">
                         <div className="logo ">
                             <h4 className="text-uppercase text-bold m-0">
                                 School Name
@@ -165,7 +155,7 @@ const Header = () => {
                             }
                             <div className="mini-tab">
                                 <div className="userprofile-wrap bg-danger">
-                                    <img className="userprofile" src={ Richmond } />
+                                    <img alt="img"  className="userprofile show-image" src={ Richmond } />
                                 </div>
                                 { !isSmaller &&
 
